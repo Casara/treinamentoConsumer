@@ -1,0 +1,10 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        classpath('br.com.dimed.arch:ds-arch-buildconfig:2.0')
+    }
+}
+
+apply plugin: 'br.com.dimed.arch.buildconfig'

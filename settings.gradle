@@ -1,0 +1,4 @@
+include 'usuarios-service-app'
+include 'usuarios-service-contract'
+include 'usuarios-service-impl'
+include 'integracao-usuarios-funcional'

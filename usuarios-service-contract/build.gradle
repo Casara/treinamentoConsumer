@@ -1,0 +1,4 @@
+dependencies {
+    compile project(":usuarios-service-impl")
+    compile(dimedServicesDependencies.contract)
+}
