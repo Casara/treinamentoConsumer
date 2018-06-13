@@ -24,7 +24,8 @@ public class RestEndPoint {
     @ApiOperation(value = "Listar nomes de usuários")
     @ApiResponses(@ApiResponse(
             code = 200,
-            response = List.class,
+            response = String.class,
+            responseContainer = "List",
             message = "Consulta de nomes de usuários efetuada com sucesso."
     ))
     public List<String> consultarNomes() {
@@ -36,7 +37,8 @@ public class RestEndPoint {
     @ApiOperation(value = "Listar nomes de usuários com filtro pelo nome")
     @ApiResponses(@ApiResponse(
             code = 200,
-            response = List.class,
+            response = String.class,
+            responseContainer = "List",
             message = "Consulta de nomes de usuários com filtro pelo nome efetuada com sucesso."
     ))
     public List<String> consultarNomesComFiltro(@QueryParam("q") String queryString) {
