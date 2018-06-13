@@ -6,8 +6,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ApiServiceModule {
+
     @Bean
     public ApiService consultaUsuariosApiService(ConsultaUsuariosRestClient restClient) {
         return new ApiService(restClient);
     }
+
 }

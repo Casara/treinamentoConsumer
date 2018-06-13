@@ -6,13 +6,12 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class ConsultaUsuariosResponse {
+
     @JsonProperty("id")
     private int id;
 
@@ -27,4 +26,5 @@ public class ConsultaUsuariosResponse {
 
     @JsonProperty("endereco")
     private String endereco;
+
 }

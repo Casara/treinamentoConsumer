@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 
 @AllArgsConstructor
 public class UsuariosService {
+
     ApiService apiService;
 
     public List<String> consultarNomes() {
@@ -30,10 +31,11 @@ public class UsuariosService {
     }
 
     private Function<Usuario, String> nomeUsuario() {
-        return usuario -> usuario.getNome();
+        return Usuario::getNome;
     }
 
     private BiPredicate<Usuario, String> filtroPorNome() {
         return ((usuario, s) -> usuario.getNome().equals(s));
     }
+
 }

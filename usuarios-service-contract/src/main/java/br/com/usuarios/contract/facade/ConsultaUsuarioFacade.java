@@ -7,6 +7,7 @@ import java.util.List;
 
 @AllArgsConstructor
 public class ConsultaUsuarioFacade {
+
     UsuariosService usuariosService;
 
     public List<String> consultarNomes() {
@@ -16,4 +17,5 @@ public class ConsultaUsuarioFacade {
     public List<String> consultarNomesComFiltro(String s) {
         return usuariosService.consultarPorNome(s);
     }
+
 }

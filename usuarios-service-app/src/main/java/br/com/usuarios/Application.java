@@ -9,7 +9,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @ComponentScan(basePackages = "br.com.usuarios")
 public class Application {
-    public static void main(String[] args) throws Exception {
+
+    public static void main(String[] args) {
         new DimedServicesRunner(Application.class).run(args);
     }
+
 }

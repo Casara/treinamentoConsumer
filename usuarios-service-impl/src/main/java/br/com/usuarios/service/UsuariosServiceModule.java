@@ -6,8 +6,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class UsuariosServiceModule {
+
     @Bean
     public UsuariosService usuariosService(ApiService apiService) {
         return new UsuariosService(apiService);
     }
+
 }

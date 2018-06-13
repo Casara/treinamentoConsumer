@@ -14,6 +14,7 @@ import java.util.List;
 
 @AllArgsConstructor
 public class ConsultaUsuariosRestClient {
+
     private ConsultaUsuariosRequestFactory requestFactory;
     private RestTemplate restTemplate;
 
@@ -30,4 +31,5 @@ public class ConsultaUsuariosRestClient {
 
         return responseEntity.getBody();
     }
+
 }

@@ -7,6 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class ConsultaUsuariosRestClientModule {
+
     @Bean
     public ConsultaUsuariosRestClient consultaUsuariosRestClient(ConsultaUsuariosRequestFactory requestFactory,
                                                                  RestTemplate restTemplate) {
@@ -17,4 +18,5 @@ public class ConsultaUsuariosRestClientModule {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
 }

@@ -4,6 +4,7 @@ import br.com.usuarios.funcional.api.restclient.model.response.ConsultaUsuariosR
 import br.com.usuarios.model.Usuario;
 
 public class UsuarioBinder {
+
     public static Usuario bindFrom(ConsultaUsuariosResponse consultaUsuariosResponse) {
         return Usuario.builder()
                 .id(consultaUsuariosResponse.getId())
@@ -13,4 +14,5 @@ public class UsuarioBinder {
                 .endereco(consultaUsuariosResponse.getEndereco())
                 .build();
     }
+
 }

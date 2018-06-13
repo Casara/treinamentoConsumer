@@ -11,8 +11,10 @@ import javax.ws.rs.ApplicationPath;
 @Api("/usuarios")
 @ApplicationPath("treinamento")
 public class JerseyConfig extends DefaulJerseyConfig {
+
     public JerseyConfig() {
         super();
         register(RestEndPoint.class);
     }
+
 }

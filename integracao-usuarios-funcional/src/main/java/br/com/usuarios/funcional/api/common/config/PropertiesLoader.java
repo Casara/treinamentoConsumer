@@ -7,6 +7,8 @@ import org.springframework.stereotype.Component;
 @Data
 @Component
 public class PropertiesLoader {
+
     @Value("${treinamento.api.url}")
     private String treinamentoUrl;
+
 }

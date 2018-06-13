@@ -8,9 +8,11 @@ import java.util.List;
 
 @AllArgsConstructor
 public class ApiService {
+
     private ConsultaUsuariosRestClient consultaUsuariosRestClient;
 
     public List<ConsultaUsuariosResponse> consultaUsuarios() {
         return consultaUsuariosRestClient.consultar();
     }
+
 }

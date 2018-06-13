@@ -6,8 +6,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SwaggerConfig {
+
     @Bean
-    public BeanConfig beanConfig() {
+    public BeanConfig swaggerBean() {
         BeanConfig beanConfig = new BeanConfig();
         beanConfig.setTitle("Documentação do serviço de usuários");
         beanConfig.setVersion("1.0.0");
@@ -16,4 +17,5 @@ public class SwaggerConfig {
         beanConfig.setScan(true);
         return beanConfig;
     }
+
 }

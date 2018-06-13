@@ -11,6 +11,7 @@ import org.springframework.web.client.RestClientException;
 import java.io.IOException;
 
 public class ErrorFuncionalHandler extends DefaultResponseErrorHandler {
+
     @Override
     public void handleError(ClientHttpResponse response) throws IOException {
         HttpStatus statusCode = response.getStatusCode();
@@ -32,4 +33,5 @@ public class ErrorFuncionalHandler extends DefaultResponseErrorHandler {
         return clientHttpResponse.getStatusCode().series() == HttpStatus.Series.SERVER_ERROR ||
                 clientHttpResponse.getStatusCode().series() == HttpStatus.Series.CLIENT_ERROR;
     }
+
 }

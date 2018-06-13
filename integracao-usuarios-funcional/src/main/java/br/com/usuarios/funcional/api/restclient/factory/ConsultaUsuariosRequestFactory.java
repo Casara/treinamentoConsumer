@@ -8,6 +8,7 @@ import org.springframework.http.MediaType;
 
 @AllArgsConstructor
 public class ConsultaUsuariosRequestFactory {
+
     @Autowired
     private PropertiesLoader propertiesLoader;
 
@@ -20,4 +21,5 @@ public class ConsultaUsuariosRequestFactory {
         headers.setContentType(MediaType.APPLICATION_JSON);
         return headers;
     }
+
 }

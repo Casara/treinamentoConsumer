@@ -5,6 +5,7 @@ import br.com.dimed.arch.jersey.exceptions.ApiException;
 import javax.ws.rs.core.Response;
 
 public class RestServiceErroNoClienteException extends ApiException {
+
     public RestServiceErroNoClienteException(String message) {
         super(message);
     }
@@ -28,4 +29,5 @@ public class RestServiceErroNoClienteException extends ApiException {
     public Response.Status getHttpStatus() {
         return Response.Status.BAD_REQUEST;
     }
+
 }
